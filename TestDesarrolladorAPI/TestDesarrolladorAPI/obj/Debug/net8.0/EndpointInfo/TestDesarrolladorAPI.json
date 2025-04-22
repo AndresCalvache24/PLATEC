@@ -1,0 +1,308 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Test Desarrollador",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Products": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Products"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Products"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Products"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Products"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Products"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Products"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Products"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Products"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Products"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Products"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Products/{id}": {
+      "get": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Product"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Products"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "IConstructorBindingFactory": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "IModel": {
+        "type": "object",
+        "properties": {
+          "modelId": {
+            "type": "string",
+            "format": "uuid",
+            "readOnly": true
+          },
+          "modelDependencies": {
+            "$ref": "#/components/schemas/RuntimeModelDependencies"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IParameterBindingFactories": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "ITypeMappingSource": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "MigrationOperation": {
+        "type": "object",
+        "properties": {
+          "isReadOnly": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "isDestructiveChange": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Product": {
+        "type": "object",
+        "properties": {
+          "targetModel": {
+            "$ref": "#/components/schemas/IModel"
+          },
+          "upOperations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MigrationOperation"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "downOperations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MigrationOperation"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "activeProvider": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Products": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantity": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RuntimeModelDependencies": {
+        "type": "object",
+        "properties": {
+          "typeMappingSource": {
+            "$ref": "#/components/schemas/ITypeMappingSource"
+          },
+          "constructorBindingFactory": {
+            "$ref": "#/components/schemas/IConstructorBindingFactory"
+          },
+          "parameterBindingFactories": {
+            "$ref": "#/components/schemas/IParameterBindingFactories"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

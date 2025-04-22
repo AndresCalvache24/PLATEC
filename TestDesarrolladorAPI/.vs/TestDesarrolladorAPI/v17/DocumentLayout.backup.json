@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|c:\\map\\visual\\testdesarrolladorapi\\testdesarrolladorapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|solutionrelative:testdesarrolladorapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|c:\\map\\visual\\testdesarrolladorapi\\testdesarrolladorapi\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|solutionrelative:testdesarrolladorapi\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|c:\\map\\visual\\testdesarrolladorapi\\testdesarrolladorapi\\models\\productinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|solutionrelative:testdesarrolladorapi\\models\\productinsert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|c:\\map\\visual\\testdesarrolladorapi\\testdesarrolladorapi\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1011CF4D-9581-4C94-8EC4-9F81AD85618C}|TestDesarrolladorAPI\\TestDesarrolladorAPI.csproj|solutionrelative:testdesarrolladorapi\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductInsert.cs",
+              "DocumentMoniker": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Models\\ProductInsert.cs",
+              "RelativeDocumentMoniker": "TestDesarrolladorAPI\\Models\\ProductInsert.cs",
+              "ToolTip": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Models\\ProductInsert.cs",
+              "RelativeToolTip": "TestDesarrolladorAPI\\Models\\ProductInsert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T21:22:52.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "TestDesarrolladorAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Controllers\\ProductsController.cs*",
+              "RelativeToolTip": "TestDesarrolladorAPI\\Controllers\\ProductsController.cs*",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwGQAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:47:09.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "TestDesarrolladorAPI\\Models\\Products.cs",
+              "ToolTip": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Models\\Products.cs",
+              "RelativeToolTip": "TestDesarrolladorAPI\\Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:24:20.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TestDesarrolladorAPI\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\MAP\\Visual\\TestDesarrolladorAPI\\TestDesarrolladorAPI\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TestDesarrolladorAPI\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:27:39.008Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
